@@ -57,6 +57,7 @@ main {
     padding: 20px;
     background-color: white;
     min-height: 650px;
+    max-width: 2500px;
 }
 
 .profile {
@@ -124,6 +125,14 @@ aside a:hover {
 
 section.location img {
     width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+
+} 
+
+section.about-me img {
+    width: 150px;
     height: auto;
     display: block;
     margin: 10px auto;
