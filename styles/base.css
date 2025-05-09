@@ -1,0 +1,156 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0d2f81;
+    color: white;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header h1 span {
+    color: #ffd700;
+}
+
+nav {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    background: #444;
+}
+
+nav ul {
+	list-style-type: none;
+}
+nav a {
+    display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+    font-size: 1.5em;
+    margin: 0 3em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav li{
+    float: left;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: white;
+    min-height: 650px;
+    max-width: 2500px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f3f8;
+    border-radius: 5px;
+    padding-top: 0px !important;
+    margin-right: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    width: 80%;
+}
+
+.profile p, img, h2{
+    padding: 0 2em;
+}
+
+.location h2{
+    text-align: center;
+}
+
+.location p {
+    margin-top: 4em;
+}
+
+.about-me h2{
+    background-color: #0d2f81;
+    color: white;
+    text-align: center;
+    margin: 0 0;
+    border-radius: 30px 30px 0 0;
+    padding: 15px 15px;
+
+}
+
+.resources h2{
+    background-color: #0d2f81;
+    color: white;
+    text-align: center;
+    margin: 0 0;
+    border-radius: 30px 30px 0 0;
+    padding: 15px 15px;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    background-color: #e9f3f8;
+    border-radius: 5px;
+    padding-top: 0px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+aside a {
+    text-decoration: none;
+    line-height: 3em;
+    font-size: 18px;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+section.location img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+
+} 
+
+section.about-me img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+
+} 
+
+footer {
+    background-color: #0d2f81;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    height: 100px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer span {
+    color: #ffd700;
+}
