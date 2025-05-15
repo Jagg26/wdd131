@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #400080;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #400080;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1.2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #hamburger {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  main {
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .grid-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  
+  figure {
+    margin: 0;
+    text-align: center;
+  }
+
+  figure img{
+    max-width: 100%;
+  }
+  
+  footer {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #400080;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+    #hamburger {
+      display: block;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
