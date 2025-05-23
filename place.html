@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Buenos Aires city page">
+  <meta name="author" content="John Garcia">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Buenos Aires</title>
+  <link rel="stylesheet" href="./styles/place.css">
+  <script src="./scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Buenos Aires</h1>
+  </header>
+
+  <div class="hero-wrapper">
+    <picture class="hero">
+        <source srcset="./images/buenos-aires.webp" media="(min-width: 768px)" type="image/webp">
+        <source srcset="./images/buenos-aires-mobile.webp" media="(max-width: 767px)" type="image/webp">
+        <img src="images/buenos-aires-mobile.webp" alt="Buenos Aires cityscape" loading="lazy">
+    </picture>
+    
+    <div class="overlay">
+        <div class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 203 sq km</p>
+            <p><strong>Population:</strong> 15,153,729</p>
+            <p><strong>Capital:</strong> Buenos Aires</p>
+            <p><strong>Languages:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Argentine Peso</p>
+            <p><strong>Time Zone:</strong> UTC-3</p>
+            <p><strong>Calling Code:</strong> +54</p>
+            <p><strong>Internet TLD:</strong> .ar</p>
+        </div>
+
+        <div class="weather">
+            <h2>
+                Weather
+                <span class="weather-icon">
+                  <img src="./images/weather.svg" alt="Partly Cloudy Icon">
+                </span>
+              </h2>
+              <p><strong>Temperature:</strong> 10 °C</p>
+              <p><strong>Conditions:</strong> Partly Cloudy</p>
+              <p><strong>Wind:</strong> 5 km/h</p>
+              <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
+    </div>
+   </div>
+
+
+  <footer>
+    <p>
+      ©<span id="year"></span> John Garcia 🌼 Buenos Aires<br>
+      Last Modification: <span id="modified"></span>
+    </p>
+  </footer>
+</body>
+</html>
