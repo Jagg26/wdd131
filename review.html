@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="/styles/form.css">
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const key = 'reviewCount';
+      let count = parseInt(localStorage.getItem(key) || '0', 10);
+      count++;
+      localStorage.setItem(key, count);
+      document.getElementById('count').textContent = count;
+
+      const params = new URLSearchParams(location.search);
+      const display = document.getElementById('submitted-data');
+      if (display) {
+        let html = '<ul>';
+        for (const [k, v] of params.entries()) {
+          html += `<li><strong>${k}:</strong> ${v}</li>`;
+        }
+        html += '</ul>';
+        display.innerHTML = html;
+      }
+    });
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Thank you for your review!</h1>
+    <p>You have submitted <strong id="count">0</strong> review(s).</p>
+    <section id="submitted-data">
+      <h2>Submitted Data:</h2>
+    </section>
+    <p><a href="form.html" class="back-button">Back to Form</a></p>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - John A. Garcia - Buenos Aires</p>
+    <p>Last Modification: 02/26/2024 13:56:10</p>
+  </footer>
+</body>
+</html>
