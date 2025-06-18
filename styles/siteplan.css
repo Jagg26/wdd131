@@ -1,0 +1,22 @@
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fef6f9;
+      color: #333;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #ff5fa2;
+    }
+    .accent {
+      color: #6a1b9a;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .wireframes img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
